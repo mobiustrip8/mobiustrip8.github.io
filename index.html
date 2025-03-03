@@ -10,9 +10,17 @@
 <body>
     <h1>Let's get you added to Austin Area Primal's Membership List</h1>
 
-    <form>
-        <label for="textbox">Paste Info from DL here:</label>
-        <input type="text" id="textbox" name="DLtextbox">
+    <form action="/submit_form" method="post">
+        <!-- Text input -->
+        <label for="DLscan">Paste info from DL here:</label>
+        <input type="text" id="DLinfo" name="DLinfo" required><br><br>
+    
+        <!-- Radio button -->
+        <input type="radio" id="Full" name="Full" value="1">
+        <label for="Full">Full Member</label><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
